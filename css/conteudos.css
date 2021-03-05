@@ -1,0 +1,132 @@
+body {
+  background-image: url("../images/back.png");
+}
+
+.sidebar {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(110, 228, 106);
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #818181;
+  display: block;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.sidebar a.active {
+  background-color: rgb(73, 151, 70);
+  border-radius: 10px;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+
+.whiteContainer {
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+
+  margin: 10px;
+
+  display: grid;
+  grid-template-columns: 500px auto;
+  grid-column-gap: 20px;
+}
+
+.whiteContainer:first-child {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.whiteContainer:first-child a {
+  font-family: Roboto;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.whiteContainer:first-child a:hover {
+  background-color: rgb(190, 190, 190);
+  border-radius: 10px;
+}
+
+#conteudo1 img {
+  width: 500px;
+  height: 312.5px;
+}
+
+#conteudo2 img {
+  width: 500px;
+  height: 273.3px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 16px;
+  margin-left: 200px;
+}
+
+h1 {
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+p {
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.descricao {
+  font-weight: 400;
+}
+
+footer {
+  height: 100px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+footer a {
+  padding: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;
+  border: 1px solid white;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  background-color: rgb(73, 151, 70);
+}
